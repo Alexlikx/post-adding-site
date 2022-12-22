@@ -9,9 +9,9 @@ const MainContainer = ({ children }) => {
                 <title>Home</title>
             </Head>
             <header className={styles.header}>
-                <Link href="http://localhost:3000/" className={styles.A}>Home</Link>
-                <Link href="http://localhost:3000/posts" className={styles.A}>Posts</Link>
-                <Link href="http://localhost:3000/add-post" className={styles.A}>Add Post</Link>
+                <Link href="https://post-adding-site.vercel.app/" className={styles.A}>Home</Link>
+                <Link href="https://post-adding-site.vercel.app/posts" className={styles.A}>Posts</Link>
+                <Link href="https://post-adding-site.vercel.app/add-post" className={styles.A}>Add Post</Link>
             </header>
             {children}
         </>

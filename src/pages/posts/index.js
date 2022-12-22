@@ -24,7 +24,7 @@ const Posts = ({ posts }) => {
 
 export const getServerSideProps = async () => {
     try {
-        const request = await fetch('http://localhost:3000/api/post');
+        const request = await fetch('https://post-adding-site.vercel.app/api/post');
         const posts = await request.json();
         return {
             props: { posts }

@@ -8,7 +8,7 @@ const AddPost = () => {
     const [info, setInfo] = useState('');
 
     const addPost = async () => {
-        const post = await fetch('http://localhost:3000/api/post', {
+        const post = await fetch('https://post-adding-site.vercel.app/api/post', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

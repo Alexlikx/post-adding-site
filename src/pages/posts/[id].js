@@ -1,11 +1,8 @@
-import { redirect } from 'next/dist/server/api-utils';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import MainContainer from '../../components/MainContainer';
 
 const Id = ({ post }) => {
-    if(post.statusCode === 404) {
-        
+    if (post.statusCode === 404) {
+
     }
     return (
         <MainContainer>
@@ -15,7 +12,7 @@ const Id = ({ post }) => {
 }
 
 Id.getInitialProps = async context => {
-    const query = await fetch(`http://localhost:3000/api/${context.query.id}`);
+    const query = await fetch(`https://post-adding-site.vercel.app/api/${context.query.id}`);
     if (query.status == 404) {
         return { message: "Not Found", statusCode: 404 }
     };
