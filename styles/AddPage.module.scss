@@ -1,0 +1,48 @@
+.form {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        min-width: 20%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        background: linear-gradient(rgba(150,150,150,0.2), rgba(50, 50, 50, 0.2));
+        h1 {
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-size: 18px;
+            color: #fff;
+            margin: 25px 0 0 0;
+        }
+        input {
+            margin-top: 12px;
+            padding: 10px;
+            background-color: rgb(80, 80, 80);
+            border: none;
+            font-size: 20px;
+            border-radius: 20px;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+        .addPost {
+            padding: 10px;
+            color: #000;
+            background-color: #fff;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 50px;
+        }
+    }
+}

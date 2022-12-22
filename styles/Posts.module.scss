@@ -1,0 +1,26 @@
+.postGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 20px;
+
+    h4 {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    p {
+        color: rgba(255,255,255, 0.6);
+    }
+
+    .link {
+        color: #fff;
+        font-weight: 600;
+    }
+}
